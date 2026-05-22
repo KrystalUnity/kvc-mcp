@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.KrystalUnity/kvc-mcp",
+  "title": "Krystal Voice Caller",
+  "description": "MCP server for Krystal Voice Caller — drive your voice tenant from Claude, Cursor, or any MCP-aware agent. Manage tenant config, DNC, call history, Script Author drafts, contact uploads, test calls, and reception captures.",
+  "websiteUrl": "https://krystalunity.com/voice/krystal-caller",
+  "repository": {
+    "url": "https://github.com/KrystalUnity/kvc-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "kvc-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KVC_API_TOKEN",
+          "description": "Bearer token starting with kvc_token_. Generate at https://krystalunity.com/voice/krystal-caller/dashboard/api-tokens",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "KVC_BASE_URL",
+          "description": "API base URL (default https://krystalunity.com/api/admin/kvc).",
+          "isRequired": false,
+          "default": "https://krystalunity.com/api/admin/kvc"
+        }
+      ]
+    }
+  ]
+}
