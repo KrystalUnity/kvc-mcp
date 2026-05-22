@@ -1,6 +1,6 @@
 [project]
 name = "kvc-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for Krystal Voice Caller — let AI agents manage your voice tenant, drive scripts, place test calls, and harvest captures."
 readme = "README.md"
 requires-python = ">=3.10"

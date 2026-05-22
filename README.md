@@ -2,6 +2,8 @@
 
 MCP access is included with every Krystal Voice Caller tier. Use this package to manage a tenant from Claude, Cursor, or any MCP-aware agent.
 
+mcp-name: io.github.KrystalUnity/kvc-mcp
+
 ## Install
 
 ```bash
