@@ -1,0 +1,37 @@
+[project]
+name = "kvc-mcp"
+version = "0.1.0"
+description = "MCP server for Krystal Voice Caller — let AI agents manage your voice tenant, drive scripts, place test calls, and harvest captures."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Krystal Unity", email = "support@krystalunity.com" }]
+keywords = ["mcp", "krystal-voice-caller", "voice", "twilio", "openai-realtime", "ai-agent", "reception", "outbound", "claude", "cursor"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Telephony",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "httpx>=0.27",
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+kvc-mcp = "kvc_mcp.server:main"
+
+[project.urls]
+Homepage = "https://krystalunity.com/voice/krystal-caller"
+Documentation = "https://github.com/KrystalUnity/kvc-mcp#readme"
+Repository = "https://github.com/KrystalUnity/kvc-mcp"
+Issues = "https://github.com/KrystalUnity/kvc-mcp/issues"
+
+[build-system]
+requires = ["hatchling>=1.18.0"]
+build-backend = "hatchling.build"
